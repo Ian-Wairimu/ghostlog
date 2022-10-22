@@ -19,8 +19,8 @@ export const Card = ({cardIcon, cardName, cardContent, cardBtnOnclick}) => {
                     {cardContent}
                 </p>
                 {
-                    cardBtnCont.map(btn => {
-                        return <Button btnName={btn.btnName} btnClassname={btn.btnClassName} btnOnclick={cardBtnOnclick} />
+                    cardBtnCont.map((btn, i) => {
+                        return <Button btnName={btn.btnName} key={i} btnClassname={btn.btnClassName} btnOnclick={cardBtnOnclick} />
 
                     })
                 }
