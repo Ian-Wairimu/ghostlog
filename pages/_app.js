@@ -12,7 +12,7 @@ export function reportWebVitals(metric) {
           method: 'POST',
           keepalive: true
          }
-    ).then(r => console.log(r))
+    )
   }
   console.log(metric)
 }

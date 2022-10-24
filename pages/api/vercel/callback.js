@@ -11,14 +11,12 @@ export default async function handler (req, res) {
         if (!req.query.code || !req.query.next || !req.body.type || !req.body.url) {
             return res.code(400)
         }
-
         const token = await Token(req.query.code)
         await CreateLogDrain(token, {
             name: 'ghostLog',
             type: req.body.type,
             url: req.body.url
         })
-
         res.redirect(req.query.next)
     }
 }
