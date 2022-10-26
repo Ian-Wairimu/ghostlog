@@ -1,0 +1,12 @@
+.btnClassname {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 40px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+}
+.btnClassname:hover {
+    background-color: darkgreen;
+}

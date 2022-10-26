@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+}
+.headerImg {
+    border: none;
+    border-radius: 20px;
+}
+.headerContent {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+.headerH1 {
+    margin-bottom: 30px;
+}
+.headerP {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}

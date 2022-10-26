@@ -1,4 +1,8 @@
 import '../styles/globals.css';
+import '../styles/footer.css';
+import '../styles/navigation.css';
+import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/Footer/Footer";
 
 export function reportWebVitals(metric) {
   const body = JSON.stringify(metric)
@@ -17,7 +21,13 @@ export function reportWebVitals(metric) {
   console.log(metric)
 }
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return(
+      <>
+          <Navigation />
+          <Component {...pageProps} />
+          <Footer />
+      </>
+  )
 }
 
 export default MyApp

@@ -1,0 +1,12 @@
+.nav--con {
+    display: flex;
+    position: sticky;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 6px -2px rgba(0,0,0,.3);
+}
+.nav--con > h1 {
+    cursor: pointer;
+}

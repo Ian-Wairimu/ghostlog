@@ -1,0 +1,16 @@
+.navLinks,
+.linkItems,
+.linkList {
+    display: inline-block;
+    padding: 4px 8px;
+    list-style-type: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: .2s ease-out;
+}
+.linkList:hover {
+    border: none;
+    border-bottom: 3px solid green;
+}
