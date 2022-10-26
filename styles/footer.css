@@ -37,7 +37,7 @@
 }
 .ft--ul > li:hover {
     border: none;
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid #26A653;
 }
 .ft--copyright {
     margin-left: auto;

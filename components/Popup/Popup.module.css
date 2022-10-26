@@ -1,3 +1,17 @@
 .popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    height: 150px;
+    color: black;
+    background-color: #F2EA7E;
+}
+.popupH1 {
+    font-weight: 700;
+    font-size: 1.4rem;
     margin: 20px;
 }
