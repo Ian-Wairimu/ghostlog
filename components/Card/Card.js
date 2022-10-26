@@ -18,7 +18,7 @@ export const Card = ({ cardName, cardContent, cardBtnOnclick}) => {
                     <h1 className="card--name">
                         {cardName}
                     </h1>
-                    <p className="card--par">
+                    <p className={style.cardP}>
                         {cardContent}
                     </p>
                     {
