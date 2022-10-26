@@ -3,8 +3,13 @@
     flex-direction: row;
     justify-content: flex-start;
     align-self: center;
-    padding: 20px;
+    padding: 60px 20px;
     width: 100%;
+    margin-top: 20px;
+    height: 350px;
+    background: #F2EA7E;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .ft--item_one {
     display: flex;
@@ -31,7 +36,7 @@
 .ft--ul > li {
     font-weight: 500;
     font-size: 1.1rem;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     list-style-type: none;
     transition: .2s ease-out;
 }
