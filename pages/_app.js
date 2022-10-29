@@ -1,8 +1,10 @@
+import React, {useEffect, useState} from "react";
 import '../styles/globals.css';
 import '../styles/footer.css';
 import '../styles/navigation.css';
 import Navigation from "../components/Navigation/Navigation";
 import Footer from "../components/Footer/Footer";
+import {PulseLoader} from "react-spinners";
 
 export function reportWebVitals(metric) {
   const body = JSON.stringify(metric)
@@ -21,11 +23,25 @@ export function reportWebVitals(metric) {
   console.log(metric)
 }
 function MyApp({ Component, pageProps }) {
+    const[loading, setLoading] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 3000)
+    }, [])
   return(
       <>
-          <Navigation />
-          <Component {...pageProps} />
-          <Footer />
+          {
+              loading ? <span className="loader">
+                  <PulseLoader color="#26A653" />
+              </span> : (
+                  <div>
+                      <Navigation />
+                      <Component {...pageProps} />
+                      <Footer />
+                  </div>
+              )
+          }
       </>
   )
 }

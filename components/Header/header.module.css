@@ -15,7 +15,7 @@
     width: 30%;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: start;
+    align-items: flex-start;
 }
 .headerH1 {
     margin-bottom: 30px;
