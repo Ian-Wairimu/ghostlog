@@ -15,7 +15,7 @@ export const Card = ({ cardName, cardContent, cardBtnOnclick}) => {
             <div className={style.cardCon}>
               <Image src={cardIcon} className={style.cardImage} alt="card icons" />
                 <div className={style.cardCont}>
-                    <h1 className="card--name">
+                    <h1 className={style.cardName}>
                         {cardName}
                     </h1>
                     <p className={style.cardP}>

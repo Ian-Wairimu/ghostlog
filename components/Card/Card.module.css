@@ -1,7 +1,7 @@
 .card {
     display: flex;
     flex-direction: row;
-    width: 30%;
+    width: 25%;
     margin: 20px;
     justify-content: center;
     align-items: flex-end;
@@ -29,10 +29,16 @@
     justify-content: space-between;
     height: 300px;
     width: 80%;
+    /*background-color: #262626;*/
+    /*color: white;*/
     align-items: flex-start;
     margin: 20px;
 }
 .cardP {
     font-weight: 400;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+}
+.cardName {
+    font-weight: 700;
+    font-size: 1.6rem;
 }
