@@ -19,6 +19,7 @@ a {
 .loader {
   display: flex;
   justify-content: center;
+  background-color: #0F0F0F;
   align-items: center;
   width: 100%;
   height: 100vh;
