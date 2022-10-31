@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NavLinks from "./NavLinks/NavLinks";
 import {Button} from "../Button/Button";
 
@@ -28,8 +29,9 @@ const Navigation = () => {
                             btnOnclick: null,
                         }
                     ].map((v, i) => {
-                        return <Button key={i} btnName={v.btnName} btnOnclick={v.btnOnclick} />
-
+                        return <Link href="#">
+                            <Button key={i} btnName={v.btnName} btnOnclick={v.btnOnclick} />
+                        </Link>;
                     })
                 }
             </div>

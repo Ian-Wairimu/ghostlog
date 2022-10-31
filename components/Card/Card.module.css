@@ -7,7 +7,8 @@
     align-items: flex-end;
     border: none;
     border-radius: 20px;
-    box-shadow: 0 5px 6px 2px rgba(0,0,0,.3);
+    background-color: #F0F0F0;
+    color: black;
 }
 .cardCon {
     display: flex;
